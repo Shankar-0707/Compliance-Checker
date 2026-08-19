@@ -1,0 +1,51 @@
+# Environment variables & secrets (CRITICAL: DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OCR & Model downloads cache
+.cache/
+easyocr/
+paddleocr/
+*.weights
+*.onnx
+
+# Uploaded test assets / temporary test images
+*.jpg
+*.jpeg
+*.png
+*.webp
+!backend/static/**
+
+# Node / Frontend (if applicable)
+node_modules/
+.next/
+out/

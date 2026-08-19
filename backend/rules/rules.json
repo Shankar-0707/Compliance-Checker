@@ -1,0 +1,72 @@
+[
+  {
+    "field": "manufacturer_address",
+    "required": true,
+    "pattern": null,
+    "description": "Name and complete address of manufacturer, packer, or importer",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(a)"
+  },
+  {
+    "field": "product_name",
+    "required": true,
+    "pattern": null,
+    "description": "Common or generic name of the commodity",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(b)"
+  },
+  {
+    "field": "net_quantity",
+    "required": true,
+    "pattern": "\\d+\\.?\\d*\\s?(g|kg|ml|l)",
+    "description": "Net quantity in terms of standard units of weight, measure, or number",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(c)"
+  },
+  {
+    "field": "manufacture_date",
+    "required": true,
+    "pattern": "\\d{2}[/-]\\d{4}|[A-Za-z]{3,9}\\.?\\s*\\d{4}",
+    "description": "Month and year of manufacture or packing",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(d)"
+  },
+  {
+    "field": "mrp",
+    "required": true,
+    "pattern": "\\d+\\.?\\d*",
+    "description": "Maximum retail price inclusive of all taxes (MRP)",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(e)"
+  },
+  {
+    "field": "consumer_care",
+    "required": true,
+    "pattern": null,
+    "description": "Name, address, and contact details (telephone/email) of consumer care",
+    "citation": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(1)(f)"
+  },
+  {
+    "field": "fssai_license_number",
+    "required": true,
+    "pattern": "^[0-9]{14}$",
+    "description": "14-digit FSSAI licence number of the manufacturer/packer/importer",
+    "citation": "FSS (Labelling and Display) Regulations, 2020 — Reg. 2.2(7)"
+  },
+  {
+    "field": "ingredients_list",
+    "required": true,
+    "pattern": null,
+    "description": "Complete list of ingredients in descending order of composition by weight/volume",
+    "citation": "FSS (Labelling and Display) Regulations, 2020 — Reg. 2.2(2)"
+  },
+  {
+    "field": "best_before_date",
+    "required": true,
+    "pattern": null,
+    "description": "Best before or use by date",
+    "citation": "FSS (Labelling and Display) Regulations, 2020 — Reg. 2.2(5)"
+  },
+  {
+    "field": "veg_nonveg_symbol",
+    "required": true,
+    "pattern": null,
+    "description": "Vegetarian (green) or non-vegetarian (brown/red) symbol as applicable",
+    "citation": "FSS (Labelling and Display) Regulations, 2020 — Reg. 2.2(8)"
+  }
+]
