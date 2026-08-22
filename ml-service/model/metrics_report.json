@@ -1,0 +1,105 @@
+{
+  "accuracy": 0.8025,
+  "macro_f1": 0.7942,
+  "weighted_f1": 0.8043,
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "confusion_matrix": [
+    [
+      211,
+      31,
+      7,
+      3,
+      1
+    ],
+    [
+      19,
+      147,
+      24,
+      6,
+      2
+    ],
+    [
+      10,
+      58,
+      298,
+      27,
+      4
+    ],
+    [
+      7,
+      2,
+      25,
+      313,
+      34
+    ],
+    [
+      4,
+      2,
+      7,
+      43,
+      315
+    ]
+  ],
+  "classification_report": {
+    "A": {
+      "precision": 0.8406374501992032,
+      "recall": 0.83399209486166,
+      "f1-score": 0.8373015873015873,
+      "support": 253.0
+    },
+    "B": {
+      "precision": 0.6125,
+      "recall": 0.7424242424242424,
+      "f1-score": 0.6712328767123288,
+      "support": 198.0
+    },
+    "C": {
+      "precision": 0.8254847645429363,
+      "recall": 0.7506297229219143,
+      "f1-score": 0.7862796833773087,
+      "support": 397.0
+    },
+    "D": {
+      "precision": 0.798469387755102,
+      "recall": 0.821522309711286,
+      "f1-score": 0.8098318240620958,
+      "support": 381.0
+    },
+    "E": {
+      "precision": 0.8848314606741573,
+      "recall": 0.8490566037735849,
+      "f1-score": 0.8665749656121046,
+      "support": 371.0
+    },
+    "accuracy": 0.8025,
+    "macro avg": {
+      "precision": 0.7923846126342797,
+      "recall": 0.7995249947385374,
+      "f1-score": 0.7942441874130851,
+      "support": 1600.0
+    },
+    "weighted avg": {
+      "precision": 0.808851896917969,
+      "recall": 0.8025,
+      "f1-score": 0.8043373016793022,
+      "support": 1600.0
+    }
+  },
+  "medians": {
+    "energy_kcal": 258.0,
+    "sugars_g": 5.41,
+    "saturated_fat_g": 0.91,
+    "sodium_mg": 266.67,
+    "fiber_g": 1.8,
+    "protein_g": 6.98
+  },
+  "total_samples": 8000,
+  "train_samples": 6400,
+  "test_samples": 1600
+}

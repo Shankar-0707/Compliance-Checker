@@ -56,8 +56,15 @@ async def lifespan(app: FastAPI):  # noqa: ARG001
     In production, use ``alembic upgrade head`` before starting the app.
     """
     logger.info("Starting up — ensuring database tables exist...")
-    await create_all_tables()
-    logger.info("Database ready.")
+    try:
+        await create_all_tables()
+        logger.info("Database ready.")
+    except Exception as exc:
+        logger.warning(
+            "Could not connect to PostgreSQL database (%s). "
+            "Backend will continue in local mode without audit persistence until DATABASE_URL is reachable.",
+            exc,
+        )
     yield
     logger.info("Shutting down.")
 

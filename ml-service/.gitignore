@@ -1,0 +1,16 @@
+# Python Virtual Environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest / Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw dataset files
+training/data/*.csv.gz
