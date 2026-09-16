@@ -2,8 +2,11 @@ fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-multipart==0.0.9
 
-# OCR
-easyocr
+# Custom OCR pipeline — replaces EasyOCR
+# easyocr is intentionally removed from the production path.
+# It is still available in extraction/ocr/evaluate.py for benchmark comparison only.
+torch>=2.3.0
+torchvision>=0.18.0          # needed by training script for EMNIST download
 opencv-python-headless==4.9.0.80
 
 # Image utilities
