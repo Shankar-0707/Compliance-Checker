@@ -49,3 +49,8 @@ paddleocr/
 node_modules/
 .next/
 out/
+
+backend/data/
+backend/data/*
+data/
+

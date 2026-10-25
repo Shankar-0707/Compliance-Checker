@@ -346,6 +346,24 @@ EMNIST data is downloaded automatically on first run (~500 MB).
 
 ---
 
-## Benchmark Comparison
+---
 
-*Run `python -m extraction.ocr.evaluate --image-dir <path>` to populate this section.*
+---
+
+## Benchmark Results
+
+Evaluated on 5 test image(s).
+
+| File | Custom CER | Custom WER | EasyOCR CER | EasyOCR WER |
+|------|-----------|-----------|------------|------------|
+| label 1.png | 0.824 | 1.000 | 0.011 | 0.033 |
+| label 2.png | 0.819 | 1.085 | 0.244 | 0.256 |
+| label 3.jpg | 0.993 | 1.000 | 1.000 | 1.000 |
+| label 4.jpg | 0.871 | 1.229 | 0.052 | 0.200 |
+| label 5.jpg | 0.979 | 1.000 | 0.996 | 0.998 |
+
+**Average**
+
+| — | **0.897** | **1.063** | **0.460** | **0.498** |
+
+> **Expected accuracy gap**: The custom CNN is intentionally less accurate than EasyOCR on real-world photographed labels. This is the documented outcome for a self-built system — see project report for analysis.
